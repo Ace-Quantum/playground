@@ -9,7 +9,7 @@ void printf_example(const char *format, ...)
         // format_print holds the function we'll use later
         // va_list will hold our arguments
     int func_error_check = 0;
-    int (*func_print)(va_list);
+    void (*func_print)(va_list);
     va_list args;
 
     // Start iteration through the arguments
@@ -56,7 +56,7 @@ void printf_example(const char *format, ...)
         // print the character as is
         else
         {
-            printf(*format);
+            printf("%c", *format);
         }
         // ITERATE! While loops do not auto iterate.
         format++;
