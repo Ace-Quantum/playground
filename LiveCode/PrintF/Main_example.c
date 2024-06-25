@@ -43,14 +43,7 @@ void printf_example(const char *format, ...)
             {
                 // using our va_list will pull from the next argument in the list
                 // there is no way to go backwards in this usage of va_list.
-                func_error_check = func_print(args);
-
-                // do that error check
-                if (func_error_check == -1)
-                {
-                    printf("Bro idk what you did but it's not the vibe");
-                    return;
-                }
+                func_print(args);
             }
         }
         // print the character as is
