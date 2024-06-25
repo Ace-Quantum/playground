@@ -1,0 +1,31 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * FormatSpec - structure for format specifiers
+ * @op: operator character
+ * @f: function to be returned
+ */
+
+typedef struct format
+{
+	/*Field to hold format specifier*/
+	char op;
+
+	/*Field to hold operation*/
+	int (*f)(va_list);
+
+} form;
+
+int (*get_func(char format))(va_list args);
+
+void printf_example(const char *format, ...);
+
+void print_char(va_list args);
+
+#endif
