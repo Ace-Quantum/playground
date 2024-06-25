@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib>
+#include <stdlib.h>
 
 void printf_example(const char *format, ...)
 {
