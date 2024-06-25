@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(const char *format, ...)
+int _printf(const char *format, ...)
 {
     // Setting up some variables
         // func_error_check will make sure our function is returned without error

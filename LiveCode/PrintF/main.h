@@ -24,7 +24,7 @@ typedef struct format
 
 void (*get_func(char format))(va_list args);
 
-void printf_example(const char *format, ...);
+int _printf(const char *format, ...);
 
 void print_char(va_list args);
 void print_str(va_list args);
