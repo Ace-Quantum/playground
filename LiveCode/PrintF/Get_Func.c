@@ -11,7 +11,7 @@
  * Return: returns function from forms array on success, NULL on fail
  */
 
-int (*get_func(char format))(va_list args)
+void (*get_func(char format))(va_list args)
 {
     // set up the array of structs
 	form forms[] = {
