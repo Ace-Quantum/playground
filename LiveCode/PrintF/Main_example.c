@@ -57,5 +57,5 @@ void printf_example(const char *format, ...)
 
     // finish up using the args and return the end of the program
     va_end(args);
-    return;
+    return 0;
 }
