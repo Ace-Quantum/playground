@@ -15,8 +15,12 @@ void (*get_func(char format))(va_list args)
 {
     // set up the array of structs
 	form forms[] = {
-
-    };
+		{'c', print_char},
+		{'s', print_str},
+		{'d', print_int},
+		{'i', print_int},
+		{'%', print_percent},
+		{'\0', NULL}};
 
     // Initialize your interator
 	int i = 0;
@@ -26,11 +30,11 @@ void (*get_func(char format))(va_list args)
 	{
 		if (forms[i].op == format)
             // return the found function to the pointer
-
+			return (forms[i].f);
         // i t e r a t e
-		
+		i++;
 	}
 
     // If you haven't found anything, return null
-
+	return (NULL);
 }
