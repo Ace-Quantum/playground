@@ -27,5 +27,8 @@ int (*get_func(char format))(va_list args);
 void printf_example(const char *format, ...);
 
 void print_char(va_list args);
+void print_str(va_list args);
+void print_int(va_list args);
+void print_percent(va_list args);
 
 #endif
