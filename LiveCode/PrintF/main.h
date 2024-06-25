@@ -22,8 +22,6 @@ typedef struct format
 
 } form;
 
-int main(void);
-
 void (*get_func(char format))(va_list args);
 
 int _printf(const char *format, ...);
