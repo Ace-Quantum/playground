@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
+#include <stdarg.h>
 #include <limits.h>
 
 /**
@@ -13,7 +14,8 @@
 
 void print_char(va_list args)
 {
-	printf("%c", args)
+    char c = va_arg(args, int);
+	printf("%c", c)
 }
 
 /**

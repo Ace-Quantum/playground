@@ -18,7 +18,7 @@ typedef struct format
 	char op;
 
 	/*Field to hold operation*/
-	int (*f)(va_list);
+	void (*f)(va_list);
 
 } form;
 
