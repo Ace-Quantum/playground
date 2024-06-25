@@ -19,7 +19,7 @@ int main(const char *format, ...)
     if (!format)
     {
         printf("I need an argument!");
-        return;
+        return 0;
     }
 
     // While we have characters, we'll move forward.
