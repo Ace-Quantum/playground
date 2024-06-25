@@ -9,11 +9,11 @@ void printf_example(const char *format, ...)
         // format_print holds the function we'll use later
         // va_list will hold our arguments
     int func_error_check = 0;
-    int (*func_print)(va_list)
+    int (*func_print)(va_list);
     va_list args;
 
     // Start iteration through the arguments
-    va_start(args, format)
+    va_start(args, format);
 
     // Check to make sure we have input
     if (!format)
